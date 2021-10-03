@@ -12,6 +12,7 @@ namespace _02EdicionDatos
 {
     public partial class EdicionDatos : Form
     {
+        fmAcercaDe ventanaAcercaDe;
         public EdicionDatos()
         {
             InitializeComponent();
@@ -79,6 +80,13 @@ namespace _02EdicionDatos
             tbPesetas.Text = "0";
             TextBox miTextBox = (TextBox)sender;
             miTextBox.SelectAll();
+        }
+
+        private void btnAcercaDe_Click(object sender, EventArgs e)
+        {
+            ventanaAcercaDe = new fmAcercaDe(); // esta es la forma de hacerlo dinamico
+            ventanaAcercaDe.ShowDialog();
+            ventanaAcercaDe.Dispose(); // se usa en dinamico para destruir el objeto y que no ocupe memoria (revisar por si me he equivocado)
         }
     }
 }

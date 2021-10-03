@@ -52,19 +52,28 @@
     <Compile Include="EdicionDatos.Designer.cs">
       <DependentUpon>EdicionDatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="IntroduccionDatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="IntroduccionDatos.Designer.cs">
+      <DependentUpon>IntroduccionDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAcercaDe.Designer.cs">
+      <DependentUpon>fmAcercaDe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EdicionDatos.resx">
       <DependentUpon>EdicionDatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="fmAcercaDe.resx">
+      <DependentUpon>fmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroduccionDatos.resx">
+      <DependentUpon>IntroduccionDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

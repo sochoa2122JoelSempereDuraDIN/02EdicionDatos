@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _02EdicionDatos
 {
-    public partial class Form1 : Form
+    public partial class IntroduccionDatos : Form
     {
-        public Form1()
+        public IntroduccionDatos()
         {
             InitializeComponent();
         }

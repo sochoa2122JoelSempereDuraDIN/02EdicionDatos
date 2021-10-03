@@ -29,6 +29,7 @@ namespace _02EdicionDatos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EdicionDatos));
             this.laEuros = new System.Windows.Forms.Label();
             this.laPesetas = new System.Windows.Forms.Label();
             this.btnCambiar = new System.Windows.Forms.Button();
@@ -92,6 +93,7 @@ namespace _02EdicionDatos
             this.btnAcercaDe.TabIndex = 3;
             this.btnAcercaDe.Text = "Acerca de ...";
             this.btnAcercaDe.UseVisualStyleBackColor = true;
+            this.btnAcercaDe.Click += new System.EventHandler(this.btnAcercaDe_Click);
             // 
             // btnIntroducirDatos
             // 
@@ -304,8 +306,9 @@ namespace _02EdicionDatos
             this.Controls.Add(this.btnCambiar);
             this.Controls.Add(this.laPesetas);
             this.Controls.Add(this.laEuros);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EdicionDatos";
-            this.Text = "Form1";
+            this.Text = "Edicion Datos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
