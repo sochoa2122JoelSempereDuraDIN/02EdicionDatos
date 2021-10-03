@@ -1,7 +1,7 @@
 ﻿
 namespace _02EdicionDatos
 {
-    partial class IntroduccionDatos
+    partial class fmIntroduccionDatos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace _02EdicionDatos
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IntroduccionDatos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmIntroduccionDatos));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -266,7 +266,7 @@ namespace _02EdicionDatos
             this.label11.TabIndex = 23;
             this.label11.Text = "11111111H\r\nA58818501\r\nP0300008J\r\nG03548005\r\nP0305900C\r\n";
             // 
-            // Form1
+            // fmIntroduccionDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -299,7 +299,8 @@ namespace _02EdicionDatos
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "fmIntroduccionDatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Introduccion Datos";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);

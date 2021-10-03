@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace _02EdicionDatos
 {
-    public partial class EdicionDatos : Form
+    public partial class fmEdicionDatos : Form
     {
         fmAcercaDe ventanaAcercaDe;
-        public EdicionDatos()
+        fmIntroduccionDatos ventanaIntroduccionDatos;
+        public fmEdicionDatos()
         {
             InitializeComponent();
         }
@@ -87,6 +88,13 @@ namespace _02EdicionDatos
             ventanaAcercaDe = new fmAcercaDe(); // esta es la forma de hacerlo dinamico
             ventanaAcercaDe.ShowDialog();
             ventanaAcercaDe.Dispose(); // se usa en dinamico para destruir el objeto y que no ocupe memoria (revisar por si me he equivocado)
+        }
+
+        private void btnIntroducirDatos_Click(object sender, EventArgs e)
+        {
+            ventanaIntroduccionDatos = new fmIntroduccionDatos();
+            ventanaIntroduccionDatos.ShowDialog();
+            ventanaIntroduccionDatos.Dispose();
         }
     }
 }

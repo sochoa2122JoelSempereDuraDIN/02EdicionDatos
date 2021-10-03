@@ -1,7 +1,7 @@
 ﻿
 namespace _02EdicionDatos
 {
-    partial class EdicionDatos
+    partial class fmEdicionDatos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace _02EdicionDatos
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EdicionDatos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmEdicionDatos));
             this.laEuros = new System.Windows.Forms.Label();
             this.laPesetas = new System.Windows.Forms.Label();
             this.btnCambiar = new System.Windows.Forms.Button();
@@ -103,6 +103,7 @@ namespace _02EdicionDatos
             this.btnIntroducirDatos.TabIndex = 4;
             this.btnIntroducirDatos.Text = "Introduce Datos";
             this.btnIntroducirDatos.UseVisualStyleBackColor = true;
+            this.btnIntroducirDatos.Click += new System.EventHandler(this.btnIntroducirDatos_Click);
             // 
             // tbEuros
             // 

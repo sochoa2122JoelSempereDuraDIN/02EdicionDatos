@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EdicionDatos.cs">
+    <Compile Include="fmEdicionDatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EdicionDatos.Designer.cs">
-      <DependentUpon>EdicionDatos.cs</DependentUpon>
+    <Compile Include="fmEdicionDatos.Designer.cs">
+      <DependentUpon>fmEdicionDatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="IntroduccionDatos.cs">
+    <Compile Include="fmIntroduccionDatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IntroduccionDatos.Designer.cs">
-      <DependentUpon>IntroduccionDatos.cs</DependentUpon>
+    <Compile Include="fmIntroduccionDatos.Designer.cs">
+      <DependentUpon>fmIntroduccionDatos.cs</DependentUpon>
     </Compile>
     <Compile Include="fmAcercaDe.cs">
       <SubType>Form</SubType>
@@ -66,14 +66,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="EdicionDatos.resx">
-      <DependentUpon>EdicionDatos.cs</DependentUpon>
+    <EmbeddedResource Include="fmEdicionDatos.resx">
+      <DependentUpon>fmEdicionDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmAcercaDe.resx">
       <DependentUpon>fmAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IntroduccionDatos.resx">
-      <DependentUpon>IntroduccionDatos.cs</DependentUpon>
+    <EmbeddedResource Include="fmIntroduccionDatos.resx">
+      <DependentUpon>fmIntroduccionDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

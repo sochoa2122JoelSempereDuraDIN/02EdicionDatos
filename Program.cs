@@ -16,7 +16,7 @@ namespace _02EdicionDatos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EdicionDatos());
+            Application.Run(new fmEdicionDatos());
         }
     }
 }
