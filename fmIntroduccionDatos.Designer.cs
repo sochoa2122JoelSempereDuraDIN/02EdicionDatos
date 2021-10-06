@@ -145,6 +145,7 @@ namespace _02EdicionDatos
             this.btnMostrarEnPrincipal.TabIndex = 9;
             this.btnMostrarEnPrincipal.Text = "Mostrar en Principal";
             this.btnMostrarEnPrincipal.UseVisualStyleBackColor = true;
+            this.btnMostrarEnPrincipal.Click += new System.EventHandler(this.btnMostrarEnPrincipal_Click);
             // 
             // btnAceptar
             // 
@@ -154,15 +155,18 @@ namespace _02EdicionDatos
             this.btnAceptar.TabIndex = 10;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Location = new System.Drawing.Point(322, 399);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // tbNombre
             // 
@@ -190,10 +194,15 @@ namespace _02EdicionDatos
             // 
             // tbDniCif
             // 
+            this.tbDniCif.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbDniCif.Location = new System.Drawing.Point(64, 209);
+            this.tbDniCif.MaxLength = 9;
             this.tbDniCif.Name = "tbDniCif";
             this.tbDniCif.Size = new System.Drawing.Size(112, 20);
             this.tbDniCif.TabIndex = 3;
+            this.tbDniCif.TextChanged += new System.EventHandler(this.tbDniCif_TextChanged);
+            this.tbDniCif.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDniCif_KeyPress);
+            this.tbDniCif.Validating += new System.ComponentModel.CancelEventHandler(this.tbDniCif_Validating);
             // 
             // tbLocalidad
             // 
@@ -218,6 +227,7 @@ namespace _02EdicionDatos
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(385, 20);
             this.tbEmail.TabIndex = 5;
+            this.tbEmail.Validating += new System.ComponentModel.CancelEventHandler(this.tbEmail_Validating);
             // 
             // tbContra1
             // 
@@ -232,6 +242,7 @@ namespace _02EdicionDatos
             this.tbContra2.Name = "tbContra2";
             this.tbContra2.Size = new System.Drawing.Size(123, 20);
             this.tbContra2.TabIndex = 8;
+            this.tbContra2.Validating += new System.ComponentModel.CancelEventHandler(this.tbContra2_Validating);
             // 
             // label7
             // 
@@ -302,6 +313,8 @@ namespace _02EdicionDatos
             this.Name = "fmIntroduccionDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Introduccion Datos";
+            this.Load += new System.EventHandler(this.fmIntroduccionDatos_Load);
+            this.Shown += new System.EventHandler(this.fmIntroduccionDatos_Shown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();

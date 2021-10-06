@@ -13,7 +13,7 @@ namespace _02EdicionDatos
     public partial class fmEdicionDatos : Form
     {
         fmAcercaDe ventanaAcercaDe;
-        fmIntroduccionDatos ventanaIntroduccionDatos;
+        fmIntroduccionDatos ventanaIntroduccionDatos = new fmIntroduccionDatos(); // hay que hacerlo estatico
         public fmEdicionDatos()
         {
             InitializeComponent();
@@ -92,9 +92,42 @@ namespace _02EdicionDatos
 
         private void btnIntroducirDatos_Click(object sender, EventArgs e)
         {
+            /*
             ventanaIntroduccionDatos = new fmIntroduccionDatos();
             ventanaIntroduccionDatos.ShowDialog();
             ventanaIntroduccionDatos.Dispose();
+            */
+            pnDatos.Visible = true;
+            ventanaIntroduccionDatos.tbNombreMostrar = tbNombrePrincipal;
+            tbNombrePrincipal.Text = "";
+
+            if (ventanaIntroduccionDatos.ShowDialog() == DialogResult.OK)
+            {
+                pnDatos.Visible = true;
+                //para ppoder referirme a objetos de otras propiedades ...
+                laNombre.Text = ventanaIntroduccionDatos.tbNombre.Text;
+                laDireccion.Text = ventanaIntroduccionDatos.tbDireccion.Text;
+                laLocalidad.Text = ventanaIntroduccionDatos.tbLocalidad.Text;
+                laTelefono.Text = ventanaIntroduccionDatos.tbTelefono.Text;
+                laEmail.Text = ventanaIntroduccionDatos.tbEmail.Text;
+                laCodigoPostal.Text = ventanaIntroduccionDatos.tbCodigoPostal.Text;
+                laDniCif.Text = ventanaIntroduccionDatos.tbDniCif.Text;
+            }
+            else
+            {
+                pnDatos.Visible = false; // esto borra los datos del panel. no se si lo quiero, en casa hacer bien si es posible, revisar el 
+            }
+
+        }
+
+        private void fmEdicionDatos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnDatos_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
